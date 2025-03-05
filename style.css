@@ -1,0 +1,91 @@
+body {
+  background-color: #f7f5f2;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 40px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  transition: all 0.3s;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2c3e50;
+  box-shadow: 0px 0px 8px rgba(44, 62, 80, 0.3);
+}
+
+.city {
+  background: #ecf0f1;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.city:hover {
+  transform: scale(1.03);
+}
+
+.city h2,
+.city h3,
+.city h4,
+.city h5 {
+  margin: 0;
+  font-size: 22px;
+  color: #34495e;
+}
+
+.city-date {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
+
+.time {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+footer a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
