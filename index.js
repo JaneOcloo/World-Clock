@@ -49,6 +49,8 @@ function updateCity(event) {
   let cityTime = moment().tz(cityTimeZone);
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let citiesElement = document.querySelector("#cities");
+
+  //the + sign makes it possible to add the selected city to the existing one. i mean the + sign before the equal to sign:  citiesElement.innerHTML +=
   citiesElement.innerHTML = `
    <div class="city" >
           <h2>${cityName}</h2>
@@ -60,25 +62,8 @@ function updateCity(event) {
   `;
 }
 
-function updateSelectedCity() {
-  let cityTime = moment().tz(cityTimeZone);
-  citiesElement.innerHTML = `
-      <div class="city">
-        <h2>${cityName}</h2>
-        <div class="city-date">${cityTime.format("MMMM D, YYYY")}</div>
-        <div class="time">${cityTime.format(
-          "HH:mm:ss:[<small>]SS[<small>]"
-        )}</div>
-      </div>
-    `;
-}
 updateTime();
 setInterval(updateTime, 1000);
+
 let cityElement = document.querySelector("#city-selector");
 cityElement.addEventListener("change", updateCity);
-
-updateSelectedCity();
-if (intervalId) {
-  clearInterval(intervalId);
-}
-intervalId = setInterval(updateSelectedCity, 1000);
