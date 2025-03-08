@@ -62,6 +62,8 @@ function updateCity(event) {
             "HH:mm:ss:[<small>]SS[<small>]"
           )}</div>
         </div>
+       
+
   `;
 }
 

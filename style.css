@@ -51,6 +51,21 @@ select:focus {
 .city:hover {
   transform: scale(1.03);
 }
+.home-link {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #d1eaf0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.home-link:hover {
+  background-color: #35afb8be;
+}
 
 .city h2,
 .city h3,
